@@ -1,0 +1,39 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+    background-color: #f0f0f0;
+  }
+  
+  .postit-container {
+    display: flex;
+    gap: 20px; /* Espaçamento entre os post-its */
+  }
+  
+  .postit {
+    width: 100px;
+    height: 100px;
+    padding: 10px;
+    background-color: white;
+    border: 2px solid #cccccc;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .yellow {
+    background-color: #fffb99;
+  }
+  
+  .pink {
+    background-color: #ffc0cb;
+  }
+  
+  .blue {
+    background-color: #add8e6;
+  }
+  
+  .green {
+    background-color: #98fb98;
+  }
+  
