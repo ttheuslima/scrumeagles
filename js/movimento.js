@@ -4,7 +4,7 @@ const context = canvas.getContext("2d");
 const player = {
   x: canvas.width / 2,
   y: canvas.height / 2,
-  speed: 3
+  speed: 4
 };
 
 function drawPlayer() {
@@ -38,18 +38,19 @@ function drawPlayer() {
 }
 
 function update() {
-  if (keys.ArrowUp && player.y > 0) {
+  if (keys.ArrowUp && player.y > 50) {
     player.y -= player.speed;
   }
   if (keys.ArrowDown && player.y < canvas.height - 50) {
     player.y += player.speed;
   }
-  if (keys.ArrowLeft && player.x > 0) {
+  if (keys.ArrowLeft && player.x > 50) {
     player.x -= player.speed;
   }
   if (keys.ArrowRight && player.x < canvas.width - 50) {
     player.x += player.speed;
   }
+  
 
   drawPlayer();
   requestAnimationFrame(update);
